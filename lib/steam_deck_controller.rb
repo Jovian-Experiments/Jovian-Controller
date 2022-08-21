@@ -202,7 +202,7 @@ class SteamDeckController
     @handle.control_transfer(
       bmRequestType: 0x21,
       bRequest: SET_REPORT,
-      wValue: 0x3000,
+      wValue: 0x0300,
       wIndex: 0x0002,
       dataOut: data,
     )
@@ -212,7 +212,7 @@ class SteamDeckController
     @handle.control_transfer(
       bmRequestType: 0xa1,
       bRequest: GET_REPORT,
-      wValue: 0x3000,
+      wValue: 0x0300,
       wIndex: 0x0002,
       dataIn: length,
     )
